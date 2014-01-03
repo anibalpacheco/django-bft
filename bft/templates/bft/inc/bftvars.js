@@ -1,8 +1,8 @@
 var staticURL = "{{ STATIC_URL }}";
 var absStaticURL = "{{ abs_static_url }}";
-var flashURL = "{% url flash_upload %}";
-var progressURL = "{% url progress %}";
-var captchaURL = "{% url captcha %}";
+var flashURL = "{% url 'flash_upload' %}";
+var progressURL = "{% url 'progress' %}";
+var captchaURL = "{% url 'captcha' %}";
 var captchaKey = "{{ recaptcha_pub_key }}"
 var submissionSlug;
 var submissionURL;

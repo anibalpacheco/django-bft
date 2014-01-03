@@ -32,17 +32,17 @@
 				<div id="tabs">
 					<ul>
 						<li id="li-link">
-							<a href="{% if use_flash %}{% url index %}{% else %}{% url noflash %}{% endif %}#link" id="tab-link">Link</a>
+							<a href="{% if use_flash %}{% url "index" %}{% else %}{% url "noflash" %}{% endif %}#link" id="tab-link">Link</a>
 							<div class="nav-border link-border"><!-- --></div>
 						</li>
 						<li id="li-email">
-							<a href="{% if use_flash %}{% url index %}{% else %}{% url noflash %}{% endif %}#email" id="tab-email">Email</a>
+							<a href="{% if use_flash %}{% url "index" %}{% else %}{% url "noflash" %}{% endif %}#email" id="tab-email">Email</a>
 							<div class="nav-border"><!-- --></div>
 						</li>
 					</ul>
 				</div>
 				<div id="logo">
-					<a href="{% url index %}"><img src="{{ STATIC_URL }}bft/images/logo-bft.png" width="557" height="53" border="0" alt="Big File Transfer" /></a>
+					<a href="{% url "index" %}"><img src="{{ STATIC_URL }}bft/images/logo-bft.png" width="557" height="53" border="0" alt="Big File Transfer" /></a>
 				</div>
 			</div>
 			<div id="main">
@@ -51,8 +51,8 @@
 				</div>
 				<div id="nav-bottom">
 					<ul>
-						<li><a href="{% url about %}">About</a></li>
-						<li><a href="{% url noflash %}">No Flash Version</a></li>
+						<li><a href="{% url "about" %}">About</a></li>
+						<li><a href="{% url "noflash" %}">No Flash Version</a></li>
 					</ul>
 				</div>
 				<!--<div id="content-bottom"></div>-->
